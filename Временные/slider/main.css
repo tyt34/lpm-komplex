@@ -1,0 +1,278 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #fff;
+  /*height: 3000px;*/
+}
+.slider-text {
+  display: flex;
+  min-width: 50px;
+  /*width: 100%;*//* не работает */
+  height: 100%;
+  min-height: 50px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  z-index: 2;
+  background-color: rgb(210, 205, 231);
+  opacity: 0.5;
+  border-radius: 15px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.slider-title {
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+}
+.slider-color-1 {
+  margin-top: 10px;
+  color: cmyk(64%, 59%, 30%, 31%)
+}
+.slider-color-2 {
+  margin-bottom: 10px;
+  color: rgb(63, 26, 163);
+}
+.slider-title:hover {
+  color: red;
+  opacity: 0.75;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  min-height: 200px;
+  background-size: cover;
+}
+.slider-item_1 {
+  background: url("./slider1.jpg") 100% 20% no-repeat;
+}
+.slider-item_2 {
+  background: url("./slider2.jpg") 100% 20% no-repeat;
+}
+.slider-item_3 {
+  background: url("./slider3.jpg") 100% 20% no-repeat;
+}
+.sl {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1;
+  min-height: 249px;
+  background-size: cover; /* пропорциональность экрану */
+}
+
+@media screen and (min-width: 0px) {
+  .sl {
+    min-height: 250px;
+  }
+  .slider-title {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .slider-text {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .sl {
+    min-height: 260px;
+  }
+  .slider-title {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .slider-text {
+    margin-right: 5px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (min-width: 400px) {
+  .sl {
+    min-height: 300px;
+  }
+  .slider-title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .slider-text {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 580px) {
+  .sl {
+    min-height: 350px;
+  }
+  .slider-title {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .slider-text {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sl {
+    min-height: 480px;
+  }
+  .slider-title {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .slider-text {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sl {
+    min-height: 640px;
+  }
+  .slider-title {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .slider-text {
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sl {
+    min-height: 620px;
+  }
+  .slider-title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .slider-text {
+    margin-right: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+/* стили для обёртки, в которой заключены слайды */
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* стили для контейнера слайдов */
+.slider__items {
+  display: flex;
+  transition: transform 0.6s ease;
+
+}
+
+/* стили для слайдов */
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+
+}
+
+/* стили для кнопок "вперед" и "назад" */
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(209, 37, 37, 0.5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_prev {
+  left: 0;
+}
+
+.slider__control_next {
+  right: 0;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* стили для индикаторов */
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+}
+/*
+.slider__indicators:hover {
+  opacity: 0.5;
+  color: rgb(170, 44, 196);
+}
+*/
+.slider__indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(205, 39, 39, 0.5);
+  background-clip: padding-box;
+  border-top: 1px solid rgb(191, 120, 39);
+  border-bottom: 1px solid rgb(19, 172, 255);
+  border-radius: 15px;
+}
+@media screen and (max-width: 400px) {
+  .slider__indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+}
+.slider__indicators li.active {
+  background-color: #2cc67c;
+}

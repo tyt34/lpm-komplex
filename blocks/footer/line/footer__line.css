@@ -1,0 +1,22 @@
+.footer__line {
+  background-color: #9ED3C7;
+  height: 10px;
+  /*width: 90%;*/
+  margin-left: 21px;
+  margin-right: 21px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__line {
+    flex-direction: row;
+    /*max-width: 250px;*/
+    margin-top: 10px;
+    margin-bottom: 6px;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*width: 100%;*/
+  }
+}

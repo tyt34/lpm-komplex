@@ -1,0 +1,16 @@
+.service__title {
+  font-size: 18px;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .service__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service__title {
+    font-size: 22px;
+  }
+}

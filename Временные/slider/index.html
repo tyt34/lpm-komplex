@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--
+https://itchief.ru/javascript/how-to-create-slider
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Slider</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+  <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <div class="slider-item_1 sl">
+            <div class="slider-text">
+              <a class="slider-title slider-color-1" href="#">Опора «ТУД»</a>
+              <a class="slider-title slider-color-2" href="#">Музей: Россия — моя история</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider-item_2 sl">
+            <div class="slider-text">
+              <a class="slider-title slider-color-1" href="#">Опора «ЛВК-01-4,5»</a>
+              <a class="slider-title slider-color-2" href="#">Парк Сахарова</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider-item_3 sl">
+            <div class="slider-text">
+              <a class="slider-title slider-color-1" href="#">Опора «Опора»</a>
+              <a class="slider-title slider-color-2" href="#">Музей: Музей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+  </div>
+
+  <script src="./main.js"></script>
+  <script>
+    slideShow('.slider', {
+      isAutoplay: false
+    });
+  </script>
+</body>
+
+</html>

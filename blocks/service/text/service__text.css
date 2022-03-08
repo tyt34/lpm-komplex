@@ -1,0 +1,43 @@
+.service__text {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  /*font-size: 25px;*/
+  letter-spacing: 0.8px;
+  color: black;
+  /*max-width: 760px;*/
+}
+
+.service__text-end {
+  margin-top: 120px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .service__text {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .service__text {
+    font-size: 22px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .service__text {
+    font-size: 26px;
+    line-height: 41px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .service__text {
+    font-size: 30px;
+    line-height: 47px;
+  }
+}

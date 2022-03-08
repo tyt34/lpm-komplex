@@ -1,0 +1,63 @@
+
+/* стили для кнопок "вперед" и "назад" */
+.roof__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  width: 20px;
+  height: 30px;
+  transform: translateY(-50%);
+  background: rgba(209, 37, 37, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .roof__control {
+    width: 40px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .roof__control {
+    width: 50px;
+    height: 60px;
+  }
+}
+
+.roof__control:hover,
+.roof__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.roof__control_prev {
+  left: 0;
+}
+
+.roof__control_next {
+  right: 0;
+}
+
+.roof__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.roof__control_prev::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.roof__control_next::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}

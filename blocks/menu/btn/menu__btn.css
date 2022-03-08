@@ -1,0 +1,62 @@
+.menu__btn {
+  display: flex;
+  /*
+  background: url(./burger1.png) 100% 100% no-repeat;
+  background-size: cover;
+  */
+  /*background-color: red;*/
+  align-items: center;
+  position: fixed;
+  top: 12px;
+  right: 20px;
+  /*
+  width: 26px;
+  height: 11px;
+  */
+  cursor: pointer;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  /*padding-bottom: -5px;*/
+}
+
+.menu__btn::after {
+  background-color: red;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu__btn {
+    width: 35px;
+    height: 35px;
+    top: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .menu__btn {
+    width: 40px;
+    height: 40px;
+    top: 6px;
+  }
+}

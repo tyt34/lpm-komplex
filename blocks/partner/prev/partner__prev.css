@@ -1,0 +1,14 @@
+.partner__prev {
+  cursor: pointer;
+  /* Положение элемента задаётся относительно границ браузера: */
+  position: absolute;
+  top: 23%;
+  padding: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  left: 0;
+}
+
+.partner__prev:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,60 @@
+.roof__element {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /*background-size: cover;*/ /*не работает*/ /*оказывается мешал руф элемент 1 */ /* пропорциональность экрану */
+  /*z-index: 1;*/ /* я не знаю зачем это */
+  min-height: 249px;
+}
+
+.roof__element_1 {
+  background: url("../../../images/roof/slider1.jpg") 100% 20% no-repeat;
+  background-size: cover;
+}
+.roof__element_2 {
+  background: url("../../../images/roof/slider2.jpg") 100% 20% no-repeat;
+  background-size: cover;
+}
+.roof__element_3 {
+  background: url("../../../images/roof/slider3.jpg") 100% 20% no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 0px) {
+  .roof__element {
+    min-height: 250px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .roof__element {
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .roof__element {
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  .roof__element {
+    min-height: 550px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .roof__element {
+    min-height: 680px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .roof__element {
+    min-height: 740px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .roof__element {
+    min-height: 820px;
+  }
+}

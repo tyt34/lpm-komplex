@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!--
+https://itchief.ru/javascript/how-to-create-slider
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Slider-roof</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body class="body">
+
+  <div class="roof">
+    <div class="roof__wrapper">
+      <div class="roof__items">
+        <div class="roof__item">
+          <div class="roof__element_1 roof__element">
+            <div class="roof__text">
+              <a class="roof__title roof__color-1" href="#">Опора «ТУД»</a>
+              <a class="roof__title roof__color-2" href="#">Музей: Россия — моя история</a>
+            </div>
+          </div>
+        </div>
+        <div class="roof__item">
+          <div class="roof__element_2 roof__element">
+            <div class="roof__text">
+              <a class="roof__title roof__color-1" href="#">Опора «ЛВК-01-4,5»</a>
+              <a class="roof__title roof__color-2" href="#">Парк Сахарова</a>
+            </div>
+          </div>
+        </div>
+        <div class="roof__item">
+          <div class="roof__element_3 roof__element">
+            <div class="roof__text">
+              <a class="roof__title roof__color-1" href="#">Опора «Опора»</a>
+              <a class="roof__title roof__color-2" href="#">Музей: Музей</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="roof__control roof__control_prev" href="#" role="button"></a>
+    <a class="roof__control roof__control_next roof__control_show" href="#" role="button"></a>
+  </div>
+
+  <script src="./scripts/roof.js"></script>
+  <script>
+    slideShow('.roof', {
+      isAutoplay: false
+    });
+  </script>
+</body>
+
+</html>

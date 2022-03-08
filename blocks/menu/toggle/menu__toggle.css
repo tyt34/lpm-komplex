@@ -1,0 +1,29 @@
+.menu__toggle {
+  opacity: 0;
+  /*top: 20px;*/
+  /*z-index: -1;*/
+  display: flex;
+}
+
+.menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+
+.menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+.menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  /*left: 0;*/ /* слева направо */
+  /*right: 0;*/ /* важно для определения направления */
+  /* не знаю что это */
+  top: 0; /* сверху внизу */
+  z-index: 2;
+}
