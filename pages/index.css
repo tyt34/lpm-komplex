@@ -13,6 +13,7 @@
 @import url(../blocks/footer/text-big/footer__text-big.css);
 @import url(../blocks/footer/second-row/footer__second-row.css);
 @import url(../blocks/footer/text-small/footer__text-small.css);
+@import url(../blocks/footer/link/footer__link.css);
 
 @import url(../blocks/partner/but/partner__but.css);
 @import url(../blocks/partner/img/partner__img.css);
@@ -63,7 +64,25 @@
 @import url(../blocks/company/text/company__text.css);
 @import url(../blocks/company/text-special/company__text-special.css);
 
+/*
 @import url(../blocks/cover__overlay.css);
+*/
+
+@import url(../blocks/tech/tech.css);
+@import url(../blocks/tech/img/tech__img.css);
+
+@import url(../blocks/tech/info/tech__info.css);
+@import url(../blocks/tech/info/tech__info_l.css);
+@import url(../blocks/tech/info/tech__info_r.css);
+
+@import url(../blocks/tech/line/tech__line.css);
+
+@import url(../blocks/tech/section/tech__section.css);
+
+@import url(../blocks/tech/text/tech__text_down.css);
+@import url(../blocks/tech/text/tech__text_up.css);
+@import url(../blocks/tech/text/tech__text.css);
+
 
 @font-face {
   font-family: 'Bahnschrift';

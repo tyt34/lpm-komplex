@@ -95,15 +95,15 @@ function showSlides(n, numInStr) {
     slides[num1].style.display = 'flex'
     slides[num2].style.display = 'flex'
   } else if (numInStr === 3) {
-    console.log('sI/all', slideIndex,'/',all)
+    //console.log('sI/all', slideIndex,'/',all)
     if (slideIndex === 1) {
       num1 = slideIndex - 1
       num2 = 1
       num3 = 2
       offOrder(3)
       offOrder(4)
-      console.log('01 -> \n')
-      console.log(num1, num2, num3)
+      //console.log('01 -> \n')
+      //console.log(num1, num2, num3)
       par.style.flexDirection = 'row'
     } else if ((slideIndex > 1) && (slideIndex < (all - 1.9))) {
       num1 = slideIndex - 1
@@ -111,8 +111,8 @@ function showSlides(n, numInStr) {
       num3 = slideIndex + 1
       offOrder(3)
       offOrder(4)
-      console.log('02 -> \n')
-      console.log(num1, num2, num3)
+      //console.log('02 -> \n')
+      //console.log(num1, num2, num3)
       par.style.flexDirection = 'row'
     } else if ((slideIndex > 1) && (slideIndex < (all - 0.9))) {
       num1 = slideIndex - 1
@@ -122,8 +122,8 @@ function showSlides(n, numInStr) {
       //slides[4].style.order = -1
       onOrder(3)
       onOrder(4)
-      console.log('03 -> \n')
-      console.log(num1, num2, num3)
+      //console.log('03 -> \n')
+      //console.log(num1, num2, num3)
       par.style.flexDirection = 'row'
     } else if (slideIndex === all) {
       num1 = slideIndex - 1
@@ -131,8 +131,8 @@ function showSlides(n, numInStr) {
       num3 = 1
       onOrder(3)
       onOrder(4)
-      console.log('04 -> \n')
-      console.log(num1, num2, num3)
+      //console.log('04 -> \n')
+      //console.log(num1, num2, num3)
       par.style.flexDirection = 'row'
     }
     slides[num1].style.display = 'flex'
@@ -140,8 +140,6 @@ function showSlides(n, numInStr) {
     slides[num3].style.display = 'flex'
   }
 }
-
-
 
 function searchMouse() {
   mainBlock[0].onmouseover = function() {

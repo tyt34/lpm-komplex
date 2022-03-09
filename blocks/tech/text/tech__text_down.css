@@ -1,0 +1,22 @@
+.tech__text_down {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 11px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
+@media screen and (min-width: 450px) {
+  .tech__text_down {
+    margin-top: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tech__text_down {
+    margin-top: 10px;
+  }
+}

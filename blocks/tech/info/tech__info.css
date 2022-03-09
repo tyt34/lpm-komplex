@@ -1,0 +1,40 @@
+.tech__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F9F3F9;
+  height: 60px;
+  margin-top: 40px;
+  z-index: 2;
+}
+
+@media screen and (min-width: 450px) {
+  .tech__info {
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tech__info {
+    height: 124px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tech__info {
+    height: 158px;
+  }
+}
+/*
+@media screen and (min-width: 1280px) {
+  .tech__info {
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tech__info {
+    height: 60px;
+  }
+}
+*/

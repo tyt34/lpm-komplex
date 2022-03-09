@@ -1,0 +1,45 @@
+.tech__text {
+  font-family: Bahnschrift;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 7px;
+  line-height: 11px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: black;
+}
+
+@media screen and (min-width: 450px) {
+  .tech__text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tech__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tech__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .tech__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tech__text {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
