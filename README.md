@@ -19,5 +19,7 @@
 
 [Ссылка на макет в Figma](https://www.figma.com/file/6Cusjy39hADuiTcmojrFud/Main-2?node-id=0%3A1).
 
+[Ссылка на готовый проект](https://tyt34.github.io/lpm-komplex/).
+
 ## Запуск приложения
 1. открыть `./index.html`
