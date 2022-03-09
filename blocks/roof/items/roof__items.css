@@ -1,5 +1,0 @@
-/* стили для контейнера слайдов */
-.roof__items {
-  display: flex;
-  transition: transform 0.6s ease;
-}
