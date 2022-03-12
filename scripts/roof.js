@@ -1,6 +1,5 @@
 'use strict';
 var slideShow = (function () {
-  //console.log('hi')
   return function (selector, config) {
     var
       _slider = document.querySelector(selector), // основный элемент блока
@@ -21,8 +20,6 @@ var slideShow = (function () {
         delayAutoplay: 5000, // интервал между автоматической сменой слайдов
         isPauseOnHover: true // устанавливать ли паузу при поднесении курсора к слайдеру
       };
-      //console.log(_sliderContainer)
-      //console.log(_sliderControls)
     // настройка конфигурации слайдера в зависимости от полученных ключей
     for (var key in config) {
       if (key in _config) {
@@ -83,10 +80,6 @@ var slideShow = (function () {
         }
       }
       _sliderContainer.style.transform = 'translateX(' + _transformValue + '%)';
-      //console.log('1 --> ', _sliderContainer)
-      //console.log('2 --> ', currentIndicator)
-      //console.log('3 --> ', _indicatorIndex)
-      //console.log('4 --> ', _indicatorItems)
       _indicatorItems[currentIndicator].classList.remove('active');
       _indicatorItems[_indicatorIndex].classList.add('active');
     };
